@@ -76,14 +76,14 @@ html{
     margin-top: -35px;
     font-size: 20px;
     background: none;
-    color: #E8871E;
+    color: white;
  
 }
 .search-icon i{
     vertical-align: middle;
-    background-color: white;
+    background-color: #E8871E;
     padding: 5.5px 5.5px;
-    border: 2px solid #E8871E;
+    border: 2px solid white;
     border-radius: 7px;
 }
 
@@ -95,6 +95,8 @@ html{
 }
 .firstSection{
     display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
 }
 .box-main{
@@ -105,7 +107,7 @@ html{
     max-width: 60%;
     align-items: center;
     margin-top: -20%;
-    margin-left: 15%;
+    /* margin-left: 10%; */
 
 }
 
@@ -317,7 +319,12 @@ html{
     height: 4px;
     margin: 5px 3px;
 }
-
+@media only screen and (max-width:1669px){
+    .background{
+        background-image: url('ferrismedia.jpg');
+    }
+    
+}
 
 @media only screen and (max-width: 1200px){
     .nav-list{
@@ -330,7 +337,7 @@ html{
         
     }
     .background{
-        background-image: url('aboodi-vesakaran-Sl8TDgSjH0s-unsplash.jpg');
+        background-image: url('ferrismedia.jpg');
     }
     .rightNav{
         text-align: center;
@@ -338,6 +345,10 @@ html{
     .box-main{
         flex-direction: column-reverse;
         max-width: 100%;
+        
+    }
+    .search-icon{
+        visibility: hidden;
     }
     #search{
         width: 100%;
@@ -354,15 +365,34 @@ html{
     .section{
         flex-direction: column-reverse;
     }
+    .firstHalf{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+          
+    }
     .text-small{
         text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        
     }
     .text-big{
         text-align: center;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
     }
     .buttons{
-        text-align: center;
+
+        align-items: center;
     }
+    
     .paras{
         padding: 0px;
     }
@@ -372,6 +402,7 @@ html{
     }
 
     #contact{
+    
         justify-content: center;
     }
 
@@ -386,6 +417,9 @@ html{
 
     .sectionContent{
         display: none;
+    }
+    .btn-dark{
+        width: 80%;
     }
    
 }
